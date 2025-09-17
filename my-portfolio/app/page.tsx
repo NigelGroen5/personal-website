@@ -26,7 +26,7 @@ export default function Home() {
                 Nigel Groen
               </h1>
               <h2 className="text-2xl md:text-3xl text-slate-700 font-medium mb-8">
-                Creative Designer & Developer
+                CS Undergrad, Software Engineer
               </h2>
               <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
                 I craft digital experiences that blend beautiful design with powerful functionality. 
@@ -82,12 +82,6 @@ export default function Home() {
                   </div>
                 </div>
                 {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-16 h-16 bg-white rounded-xl shadow-md flex items-center justify-center">
-                  <span className="text-2xl">💻</span>
-                </div>
-                <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-slate-300 rounded-lg shadow-md flex items-center justify-center">
-                  <span className="text-lg">🎨</span>
-                </div>
               </div>
             </div>
           </div>
@@ -148,8 +142,8 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
-                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Senior UX Designer</h3>
-                  <p className="text-slate-600 font-medium text-lg">Glacier Studios</p>
+                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Software Developer Intern</h3>
+                  <p className="text-slate-600 font-medium text-lg">Tracker Networks</p>
                 </div>
                 <span className="text-slate-500 font-medium">2021 - Present</span>
               </div>
@@ -158,18 +152,21 @@ export default function Home() {
                 digital solutions. Managed a team of 6 designers and collaborated with cross-functional teams.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Figma</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Design Systems</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">User Research</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Team Leadership</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Next.js</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">React</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Typescript</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Convex</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">HTML</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">CSS</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Clerk</span>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
-                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Product Designer</h3>
-                  <p className="text-slate-600 font-medium text-lg">Arctic Tech</p>
+                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Lead Developer</h3>
+                  <p className="text-slate-600 font-medium text-lg">Queen's Computing Students' Assocation</p>
                 </div>
                 <span className="text-slate-500 font-medium">2019 - 2021</span>
               </div>

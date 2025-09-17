@@ -17,8 +17,8 @@ module.exports = {
         white: 'rgb(var(--color-white) / <alpha-value>)',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        header: ['var(--font-header)', 'system-ui', 'sans-serif'],
+        sans: ['Times New Roman', 'serif'],
+        header: ['Times New Roman', 'serif'],
       },
     },
   },
