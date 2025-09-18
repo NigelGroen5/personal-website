@@ -163,106 +163,161 @@ export default function Home() {
           <h2 className="font-header text-5xl font-bold text-slate-900 mb-16 text-center">Experience</h2>
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/images/tracker.jfif" 
+                    alt="Tracker Networks" 
+                    className="w-16 h-16 object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <div className="flex-1">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
                   <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Software Developer Intern</h3>
                   <p className="text-slate-600 font-medium text-lg">Tracker Networks</p>
                 </div>
-                <span className="text-slate-500 font-medium">May 2025 - August 2025</span>
-              </div>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                Engineered full-stack features for VenTrack, a third-party risk management platform. Built auto-generation 
-                tools for company risk profiles and implemented real-time news feed API. Structured data for AI customer 
-                service agent, achieving 30% higher ticket resolution score.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">JavaScript</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">API Development</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Full-Stack</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Risk Management</span>
+                    <span className="text-slate-500 font-medium">May 2025 - August 2025</span>
+                  </div>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Engineered full-stack features for VenTrack, a third-party risk management platform. Built auto-generation 
+                    tools for company risk profiles and implemented real-time news feed API. Structured data for AI customer 
+                    service agent, achieving 30% higher ticket resolution score.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">JavaScript</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">API Development</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Full-Stack</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Risk Management</span>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <div>
-                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Lead Developer</h3>
-                  <p className="text-slate-600 font-medium text-lg">Queen's COMPSA</p>
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/images/compsa.jfif" 
+                    alt="Queen's COMPSA" 
+                    className="w-16 h-16 object-contain rounded-lg shadow-sm"
+                  />
                 </div>
-                <span className="text-slate-500 font-medium">August 2025 - Present</span>
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <div>
+                      <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Lead Developer</h3>
+                      <p className="text-slate-600 font-medium text-lg">Queen's COMPSA</p>
+                    </div>
+                    <span className="text-slate-500 font-medium">August 2025 - Present</span>
               </div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Lead a team of 8 developers building full-stack applications for 1,800+ students. Architected and 
-                engineered a room booking system using Next.js, React, and Supabase with AWS SES integration. 
-                Mentor developers through technical challenges and code reviews.
+                    Lead a team of 8 developers building full-stack applications for 1,800+ students. Architected and 
+                    engineered a room booking system using Next.js, React, and Supabase with AWS SES integration. 
+                    Mentor developers through technical challenges and code reviews.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Next.js</span>
                 <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">React</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Supabase</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">AWS SES</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Team Leadership</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Supabase</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">AWS SES</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Team Leadership</span>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/images/qweb.jfif" 
+                    alt="Queen's Web Development Club" 
+                    className="w-16 h-16 object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <div className="flex-1">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
-                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Software Engineer</h3>
-                  <p className="text-slate-600 font-medium text-lg">Queen's Web Development Club</p>
+                      <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Software Engineer</h3>
+                      <p className="text-slate-600 font-medium text-lg">Queen's Web Development Club</p>
                 </div>
-                <span className="text-slate-500 font-medium">2024 - 2025</span>
+                    <span className="text-slate-500 font-medium">2024 - 2025</span>
               </div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Collaborated on a 4-person team to build a full-stack scheduling app for Queen's Web Development Club. 
-                Delivered a functional product that hybridized Calendly & LettuceMeet, streamlining the club's event 
-                planning process by a tight sprint deadline.
+                    Collaborated on a 4-person team to build a full-stack scheduling app for Queen's Web Development Club. 
+                    Delivered a functional product that hybridized Calendly & LettuceMeet, streamlining the club's event 
+                    planning process by a tight sprint deadline.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">React</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">JavaScript</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Firebase</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Tailwind CSS</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Node.js</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">JavaScript</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Firebase</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Node.js</span>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/images/qtedt.jfif" 
+                    alt="Queen's Themed Entertainment Development Team" 
+                    className="w-16 h-16 object-contain rounded-lg shadow-sm"
+                  />
+                </div>
+                <div className="flex-1">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
-                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Project Engineer</h3>
-                  <p className="text-slate-600 font-medium text-lg">Queen's Themed Entertainment Development Team</p>
+                      <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Project Engineer</h3>
+                      <p className="text-slate-600 font-medium text-lg">Queen's Themed Entertainment Development Team</p>
                 </div>
-                <span className="text-slate-500 font-medium">September 2024 - Present</span>
+                    <span className="text-slate-500 font-medium">September 2024 - Present</span>
               </div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Engineered Python-based ride control simulator modeling roller coaster movement, emergency stops, and 
-                maintenance protocols. Qualified for TMU Thrill Design competition invitational round by Universal Creative. 
-                Developed show control programming for in-house projects.
+                    Engineered Python-based ride control simulator modeling roller coaster movement, emergency stops, and 
+                    maintenance protocols. Qualified for TMU Thrill Design competition invitational round by Universal Creative. 
+                    Developed show control programming for in-house projects.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Simulation</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Control Systems</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Engineering Design</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Show Control</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Simulation</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Control Systems</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Engineering Design</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Show Control</span>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <div>
-                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Operational Logistics Coordinator</h3>
-                  <p className="text-slate-600 font-medium text-lg">Smith Business and Technology</p>
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/images/sbt.jfif" 
+                    alt="Smith Business and Technology" 
+                    className="w-16 h-16 object-contain rounded-lg shadow-sm"
+                  />
                 </div>
-                <span className="text-slate-500 font-medium">2022 - 2023</span>
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <div>
+                      <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Operational Logistics Coordinator</h3>
+                      <p className="text-slate-600 font-medium text-lg">Smith Business and Technology</p>
+                    </div>
+                    <span className="text-slate-500 font-medium">2022 - 2023</span>
+                  </div>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Coordinated logistics and operations for business technology conferences and case competitions. 
+                    Managed event planning, participant coordination, and vendor relationships to ensure successful 
+                    execution of large-scale academic and professional events.
+                  </p>
+                </div>
               </div>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                Coordinated logistics and operations for business technology conferences and case competitions. 
-                Managed event planning, participant coordination, and vendor relationships to ensure successful 
-                execution of large-scale academic and professional events.
-              </p>
             </div>
           </div>
         </div>
@@ -274,11 +329,13 @@ export default function Home() {
           <h2 className="font-header text-5xl font-bold text-slate-900 mb-16 text-center">My Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
-              <div className="h-48 bg-green-200 relative overflow-hidden">
+               <div className="h-48 bg-green-200 relative overflow-hidden">
+                 <img 
+                   src="/images/qb-ml.png" 
+                   alt="NFL Quarterback Fantasy Point Predictor" 
+                   className="w-full h-full object-cover"
+                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-white text-3xl">🏈</span>
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">NFL Quarterback Fantasy Point Predictor</h3>
@@ -296,10 +353,12 @@ export default function Home() {
 
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
               <div className="h-48 bg-slate-300 relative overflow-hidden">
+                 <img 
+                   src="/images/room-booking.png" 
+                   alt="Queen's Computing Room Booking" 
+                   className="w-full h-full object-cover"
+                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-white text-3xl">🌊</span>
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Queen's Computing Room Booking</h3>
@@ -315,10 +374,12 @@ export default function Home() {
 
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
               <div className="h-48 bg-gray-200 relative overflow-hidden">
+                 <img 
+                   src="/images/qweb-booking.png" 
+                   alt="QWEB Calendar Booking App" 
+                   className="w-full h-full object-cover"
+                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-white text-3xl">❄️</span>
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QWEB Calendar Booking App</h3>
@@ -336,10 +397,12 @@ export default function Home() {
 
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
               <div className="h-48 bg-slate-400 relative overflow-hidden">
+                 <img 
+                   src="/images/ventrack.png" 
+                   alt="VenTrack" 
+                   className="w-full h-full object-cover"
+                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-white text-3xl">🧊</span>
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">VenTrack</h3>
@@ -356,10 +419,12 @@ export default function Home() {
 
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
               <div className="h-48 bg-gray-300 relative overflow-hidden">
+                 <img 
+                   src="/images/roller-coaster.png" 
+                   alt="QTEDT Ride Control System" 
+                   className="w-full h-full object-cover"
+                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-white text-3xl">🐧</span>
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QTEDT Ride Control System</h3>
