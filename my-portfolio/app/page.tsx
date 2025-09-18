@@ -1,4 +1,27 @@
+'use client';
+
 export default function Home() {
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText('nigel.groen5@gmail.com');
+      // Create toast notification
+      const toast = document.createElement('div');
+      toast.textContent = 'Email copied to clipboard!';
+      toast.className = 'fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 transition-all duration-300';
+      document.body.appendChild(toast);
+      
+      // Remove toast after 3 seconds
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => {
+          document.body.removeChild(toast);
+        }, 300);
+      }, 3000);
+    } catch (err) {
+      console.error('Failed to copy email: ', err);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-50 to-blue-50/30">
       {/* Navigation */}
@@ -29,33 +52,33 @@ export default function Home() {
                 CS Undergrad, Software Engineer
               </h2>
               <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
-                I craft digital experiences that blend beautiful design with powerful functionality. 
-                Based in Vancouver, working with clients worldwide.
+                Computer Science student at Queen's University building full-stack applications, machine learning models, 
+                and interactive experiences. Passionate about solving real-world problems through code.
               </p>
               
               {/* Contact Links */}
               <div className="flex flex-wrap gap-4 mb-8">
-                <a href="https://linkedin.com/in/nigelgroen" target="_blank" rel="noopener noreferrer" 
+                <a href="https://www.linkedin.com/in/nigel-groen-921797326/" target="_blank" rel="noopener noreferrer" 
                    className="flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-all">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                   </svg>
                   LinkedIn
                 </a>
-                <a href="https://github.com/nigelgroen" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/NigelGroen5" target="_blank" rel="noopener noreferrer"
                    className="flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-all">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                   </svg>
                   GitHub
                 </a>
-                <a href="mailto:nigel@example.com"
-                   className="flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-all">
+                <button onClick={copyToClipboard}
+                   className="flex items-center gap-2 px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-all cursor-pointer">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                   </svg>
                   Email
-                </a>
+                </button>
               </div>
 
               {/* Action Buttons */}
@@ -145,20 +168,19 @@ export default function Home() {
                   <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Software Developer Intern</h3>
                   <p className="text-slate-600 font-medium text-lg">Tracker Networks</p>
                 </div>
-                <span className="text-slate-500 font-medium">2021 - Present</span>
+                <span className="text-slate-500 font-medium">May 2025 - August 2025</span>
               </div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Leading design initiatives for Fortune 500 clients, focusing on user-centered design and innovative 
-                digital solutions. Managed a team of 6 designers and collaborated with cross-functional teams.
+                Engineered full-stack features for VenTrack, a third-party risk management platform. Built auto-generation 
+                tools for company risk profiles and implemented real-time news feed API. Structured data for AI customer 
+                service agent, achieving 30% higher ticket resolution score.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Next.js</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">React</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Typescript</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Convex</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">HTML</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">CSS</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Clerk</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">JavaScript</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">API Development</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Full-Stack</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Risk Management</span>
               </div>
             </div>
 
@@ -166,40 +188,81 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
                   <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Lead Developer</h3>
-                  <p className="text-slate-600 font-medium text-lg">Queen's Computing Students' Assocation</p>
+                  <p className="text-slate-600 font-medium text-lg">Queen's COMPSA</p>
                 </div>
-                <span className="text-slate-500 font-medium">2019 - 2021</span>
+                <span className="text-slate-500 font-medium">August 2025 - Present</span>
               </div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Designed and developed user interfaces for SaaS products serving 100K+ users. Increased user 
-                engagement by 40% through data-driven design decisions and A/B testing.
+                Lead a team of 8 developers building full-stack applications for 1,800+ students. Architected and 
+                engineered a room booking system using Next.js, React, and Supabase with AWS SES integration. 
+                Mentor developers through technical challenges and code reviews.
               </p>
               <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Next.js</span>
                 <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">React</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Sketch</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Prototyping</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Analytics</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Supabase</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">AWS SES</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Team Leadership</span>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
-                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Frontend Developer</h3>
-                  <p className="text-slate-600 font-medium text-lg">Frost Digital</p>
+                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Software Engineer</h3>
+                  <p className="text-slate-600 font-medium text-lg">Queen's Web Development Club</p>
                 </div>
-                <span className="text-slate-500 font-medium">2017 - 2019</span>
+                <span className="text-slate-500 font-medium">2024 - 2025</span>
               </div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Built responsive web applications and interactive experiences for creative agencies and startups. 
-                Specialized in modern JavaScript frameworks and performance optimization.
+                Collaborated on a 4-person team to build a full-stack scheduling app for Queen's Web Development Club. 
+                Delivered a functional product that hybridized Calendly & LettuceMeet, streamlining the club's event 
+                planning process by a tight sprint deadline.
               </p>
               <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">React</span>
                 <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">JavaScript</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Vue.js</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">SCSS</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">WebGL</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Firebase</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Node.js</span>
               </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <div>
+                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Project Engineer</h3>
+                  <p className="text-slate-600 font-medium text-lg">Queen's Themed Entertainment Development Team</p>
+                </div>
+                <span className="text-slate-500 font-medium">September 2024 - Present</span>
+              </div>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                Engineered Python-based ride control simulator modeling roller coaster movement, emergency stops, and 
+                maintenance protocols. Qualified for TMU Thrill Design competition invitational round by Universal Creative. 
+                Developed show control programming for in-house projects.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Simulation</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Control Systems</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Engineering Design</span>
+                <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Show Control</span>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-all">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <div>
+                  <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Operational Logistics Coordinator</h3>
+                  <p className="text-slate-600 font-medium text-lg">Smith Business and Technology</p>
+                </div>
+                <span className="text-slate-500 font-medium">2022 - 2023</span>
+              </div>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                Coordinated logistics and operations for business technology conferences and case competitions. 
+                Managed event planning, participant coordination, and vendor relationships to ensure successful 
+                execution of large-scale academic and professional events.
+              </p>
             </div>
           </div>
         </div>
@@ -208,22 +271,24 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-header text-5xl font-bold text-slate-900 mb-16 text-center">Featured Projects</h2>
+          <h2 className="font-header text-5xl font-bold text-slate-900 mb-16 text-center">My Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
-              <div className="h-48 bg-slate-200 relative overflow-hidden">
+              <div className="h-48 bg-green-200 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
                 <div className="absolute bottom-4 left-4">
-                  <span className="text-white text-3xl">🏔️</span>
+                  <span className="text-white text-3xl">🏈</span>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Mountain Explorer App</h3>
-                <p className="text-slate-600 mb-4">A mobile app for discovering hiking trails with AR navigation and weather integration.</p>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">NFL Quarterback Fantasy Point Predictor</h3>
+                <p className="text-slate-600 mb-4">XGBoost machine learning model predicting NFL quarterback fantasy points with 3.99 MAE. Features interactive JavaScript frontend for fantasy football analysis.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">React Native</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">AR Kit</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Maps API</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">XGBoost</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Scikit-learn</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Flask</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">JavaScript</span>
                 </div>
                 <button className="text-slate-600 font-medium hover:text-slate-800 transition-colors">View Project →</button>
               </div>
@@ -237,7 +302,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Ocean Conservation Platform</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Queen's Computing Room Booking</h3>
                 <p className="text-slate-600 mb-4">A web platform connecting marine researchers with citizen scientists worldwide.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Next.js</span>
@@ -256,12 +321,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Arctic Weather Dashboard</h3>
-                <p className="text-slate-600 mb-4">Real-time weather monitoring system for remote Arctic research stations.</p>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QWEB Calendar Booking App</h3>
+                <p className="text-slate-600 mb-4">Full-stack scheduling app hybridizing Calendly & LettuceMeet for Queen's Web Development Club. Built by 4-person team to streamline event planning.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Vue.js</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Chart.js</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">WebSocket</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">React</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Firebase</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Tailwind CSS</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">JavaScript</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Node.js</span>
                 </div>
                 <button className="text-slate-600 font-medium hover:text-slate-800 transition-colors">View Project →</button>
               </div>
@@ -275,12 +342,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Glacier Tracking System</h3>
-                <p className="text-slate-600 mb-4">Satellite imagery analysis tool for monitoring glacier movement and climate change.</p>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">VenTrack</h3>
+                <p className="text-slate-600 mb-4">Contributed full-stack features to existing third-party risk management platform. Developed auto-generation tools for company risk profiles and implemented real-time news feed API for contextual monitoring.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">TensorFlow</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">GIS</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Next.js</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Convex</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">React</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">TypeScript</span>
                 </div>
                 <button className="text-slate-600 font-medium hover:text-slate-800 transition-colors">View Project →</button>
               </div>
@@ -294,12 +362,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Wildlife Migration Tracker</h3>
-                <p className="text-slate-600 mb-4">Interactive visualization of Arctic wildlife migration patterns and population data.</p>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QTEDT Ride Control System</h3>
+                <p className="text-slate-600 mb-4">Roller coaster control simulation built for Universal's TMU Thrill Design competition. Features start/stop controls, cart removal from track, and real-time ride operation monitoring using Python and PyQt5.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">React</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Mapbox</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Node.js</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">PyQt5</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Simulation</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Control Systems</span>
                 </div>
                 <button className="text-slate-600 font-medium hover:text-slate-800 transition-colors">View Project →</button>
               </div>
@@ -313,12 +382,53 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Aurora Forecast App</h3>
-                <p className="text-slate-600 mb-4">Mobile app for predicting Northern Lights visibility with location-based alerts.</p>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Personal Portfolio</h3>
+                <p className="text-slate-600 mb-4">Modern, responsive portfolio website built with Next.js and Tailwind CSS. Features smooth animations, clean design, and showcases projects and experience.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Swift</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Core ML</span>
-                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Weather API</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Next.js</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">React</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Tailwind CSS</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">TypeScript</span>
+                </div>
+                <button className="text-slate-600 font-medium hover:text-slate-800 transition-colors">View Project →</button>
+              </div>
+            </div>
+
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
+              <div className="h-48 bg-blue-200 relative overflow-hidden">
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-white text-3xl">🚀</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Sorting Algorithm Visualizer</h3>
+                <p className="text-slate-600 mb-4">Interactive Python application built with Pygame to visualize 4 different sorting algorithms in real-time with animated comparisons and swaps.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Pygame</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Data Structures</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Algorithms</span>
+                </div>
+                <button className="text-slate-600 font-medium hover:text-slate-800 transition-colors">View Project →</button>
+              </div>
+            </div>
+
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
+              <div className="h-48 bg-green-200 relative overflow-hidden">
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-white text-3xl">🌱</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">The World's Hardest Game</h3>
+                <p className="text-slate-600 mb-4">Personalized recreation of the classic video game built with Python and Pygame. Features 11 challenging levels with identical graphics and gameplay mechanics to the original.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Pygame</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Game Development</span>
+                  <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Graphics</span>
                 </div>
                 <button className="text-slate-600 font-medium hover:text-slate-800 transition-colors">View Project →</button>
               </div>
@@ -330,28 +440,12 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-slate-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-header text-5xl font-bold text-white mb-6">Let's Create Something Amazing</h2>
           <p className="text-xl text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Ready to bring your vision to life? I'm always excited to work on new projects 
-            and collaborate with passionate people.
+            That's all, thanks for visiting.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="px-8 py-4 bg-white text-slate-600 rounded-xl font-semibold hover:shadow-lg transition-all">
-              Start a Project
-            </button>
-            <button className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-slate-600 transition-all">
-              Schedule a Call
-            </button>
-          </div>
           <div className="mt-16 pt-8 border-t border-slate-400">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-slate-200 mb-4 md:mb-0">© 2024 Nigel Groen. All rights reserved.</p>
-              <div className="flex space-x-6">
-                <a href="#" className="text-slate-200 hover:text-white transition-colors">LinkedIn</a>
-                <a href="#" className="text-slate-200 hover:text-white transition-colors">GitHub</a>
-                <a href="#" className="text-slate-200 hover:text-white transition-colors">Dribbble</a>
-                <a href="#" className="text-slate-200 hover:text-white transition-colors">Email</a>
-              </div>
+            <div className="flex flex-col items-center">
+              <p className="text-slate-200 mb-2">© 2025 Nigel Groen.</p>
             </div>
           </div>
         </div>
