@@ -138,9 +138,9 @@ export default function Home() {
                 <a href="#projects" className="px-8 py-4 bg-slate-700 text-white rounded-xl font-semibold hover:bg-slate-800 hover:shadow-lg transition-all text-center">
                   View My Work
                 </a>
-                <button className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-slate-500 hover:text-slate-800 transition-all">
+                <a href="/nigel_groen_resume (2).pdf" download="Nigel_Groen_Resume.pdf" className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-slate-500 hover:text-slate-800 transition-all text-center">
                   Download Resume
-                </button>
+                </a>
               </div>
             </div>
 
@@ -368,7 +368,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">NFL Quarterback Fantasy Point Predictor</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">NFL Quarterback Fantasy Point Predictor <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
                 <p className="text-slate-600 mb-4">XGBoost machine learning model predicting NFL quarterback fantasy points with 3.99 MAE. Features interactive JavaScript frontend for fantasy football analysis.</p>
                 <p className="text-amber-600 text-sm mb-4 font-medium">Note: Site may take a few minutes to boot up on first visit</p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -397,7 +397,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Queen's Computing Room Booking</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Queen's Computing Room Booking <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
                 <p className="text-slate-600 mb-4">Full-stack room booking system for Queen's Computing students. Built with Next.js, React, and Supabase with AWS SES integration for email notifications.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Next.js</span>
@@ -424,7 +424,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QWEB Calendar Booking App</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QWEB Calendar Booking App <span className="text-slate-500 font-normal text-base">(2024)</span></h3>
                 <p className="text-slate-600 mb-4">Full-stack scheduling app hybridizing Calendly & LettuceMeet for Queen's Web Development Club. Built by 4-person team to streamline event planning.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">React</span>
@@ -447,7 +447,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">VenTrack</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">VenTrack <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
                 <p className="text-slate-600 mb-4">Contributed full-stack features to existing third-party risk management platform. Developed auto-generation tools for company risk profiles and implemented real-time news feed API for contextual monitoring.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Next.js</span>
@@ -469,7 +469,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QTEDT Ride Control System</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QTEDT Ride Control System <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
                 <p className="text-slate-600 mb-4">Roller coaster control simulation built for Universal's TMU Thrill Design competition. Features start/stop controls, cart removal from track, and real-time ride operation monitoring using Python and PyQt5.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
@@ -491,7 +491,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Personal Portfolio</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Personal Portfolio <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
                 <p className="text-slate-600 mb-4">Portfolio website built with Next.js and Tailwind CSS. Features clean design, and showcases projects and experience.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Next.js</span>
@@ -518,7 +518,7 @@ export default function Home() {
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
                </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Sorting Algorithm Visualizer</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Sorting Algorithm Visualizer <span className="text-slate-500 font-normal text-base">(2023)</span></h3>
                 <p className="text-slate-600 mb-4">Interactive Python application built with Pygame to visualize 4 different sorting algorithms in real-time with animated comparisons and swaps.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
@@ -545,7 +545,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">The World's Hardest Game</h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">The World's Hardest Game <span className="text-slate-500 font-normal text-base">(2023)</span></h3>
                 <p className="text-slate-600 mb-4">Personalized recreation of the classic video game built with Python and Pygame. Features 11 challenging levels with identical graphics and gameplay mechanics to the original.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
