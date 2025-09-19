@@ -169,10 +169,10 @@ export default function Home() {
             <div>
               <h2 className="font-header text-5xl font-bold text-slate-900 mb-8">About Me</h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              Currently, I'm involved in Queen's Computing Student Assocation (COMPSA), Queen's Themed Entertainment Development Team (QTEDT), and Smith Business and Technology (SBT) where I engage in software development, leadership, and learning new technologies. I've always been fascinated by technology which led me to pursue a career in computer science.
+              Currently, I&apos;m involved in Queen&apos;s Computing Student Assocation (COMPSA), Queen&apos;s Themed Entertainment Development Team (QTEDT), and Smith Business and Technology (SBT) where I engage in software development, leadership, and learning new technologies. I&apos;ve always been fascinated by technology which led me to pursue a career in computer science.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                When I'm not coding, you'll find me at the pier playing spikeball, playing intramural Soccer, Football, or Ultimate Frisbee, and spending time with my friends.
+                When I&apos;m not coding, you&apos;ll find me at the pier playing spikeball, playing intramural Soccer, Football, or Ultimate Frisbee, and spending time with my friends.
               </p>
             </div>
             <div className="relative">
@@ -398,7 +398,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Queen's Computing Room Booking <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
-                <p className="text-slate-600 mb-4">Full-stack room booking system for Queen's Computing students. Built with Next.js, React, and Supabase with AWS SES integration for email notifications.</p>
+                <p className="text-slate-600 mb-4">Full-stack room booking system for Queen&apos;s Computing students. Built with Next.js, React, and Supabase with AWS SES integration for email notifications.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Next.js</span>
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">React</span>
@@ -425,7 +425,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QWEB Calendar Booking App <span className="text-slate-500 font-normal text-base">(2024)</span></h3>
-                <p className="text-slate-600 mb-4">Full-stack scheduling app hybridizing Calendly & LettuceMeet for Queen's Web Development Club. Built by 4-person team to streamline event planning.</p>
+                <p className="text-slate-600 mb-4">Full-stack scheduling app hybridizing Calendly &amp; LettuceMeet for Queen&apos;s Web Development Club. Built by 4-person team to streamline event planning.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">React</span>
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Firebase</span>
@@ -470,7 +470,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">QTEDT Ride Control System <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
-                <p className="text-slate-600 mb-4">Roller coaster control simulation built for Universal's TMU Thrill Design competition. Features start/stop controls, cart removal from track, and real-time ride operation monitoring using Python and PyQt5.</p>
+                <p className="text-slate-600 mb-4">Roller coaster control simulation built for Universal&apos;s TMU Thrill Design competition. Features start/stop controls, cart removal from track, and real-time ride operation monitoring using Python and PyQt5.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">PyQt5</span>
@@ -564,7 +564,7 @@ export default function Home() {
       <section id="contact" className="py-20 px-6 bg-slate-600">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xl text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-            That's all, thanks for visiting.
+            That&apos;s all, thanks for visiting.
           </p>
           <div className="mt-16 pt-8 border-t border-slate-400">
             <div className="flex flex-col items-center">
