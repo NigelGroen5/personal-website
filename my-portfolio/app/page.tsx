@@ -104,7 +104,7 @@ export default function Home() {
                 CS Undergrad, Software Engineer
               </h2>
               <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
-                Computer Science student at Queen's University building full-stack applications, machine learning models, 
+                Computer Science student at Queen&apos;s University building full-stack applications, machine learning models, 
                 and interactive experiences. Passionate about solving real-world problems through code.
               </p>
               
@@ -231,7 +231,7 @@ export default function Home() {
                 <div className="flex-shrink-0">
                   <img 
                     src="/images/compsa.jfif" 
-                    alt="Queen's COMPSA" 
+                    alt="Queen&apos;s COMPSA" 
                     className="w-16 h-16 object-contain rounded-lg shadow-sm"
                   />
                 </div>
@@ -239,7 +239,7 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                     <div>
                       <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Lead Developer</h3>
-                      <p className="text-slate-600 font-medium text-lg">Queen's COMPSA</p>
+                      <p className="text-slate-600 font-medium text-lg">Queen&apos;s COMPSA</p>
                     </div>
                     <span className="text-slate-500 font-medium">August 2025 - Present</span>
               </div>
@@ -264,7 +264,7 @@ export default function Home() {
                 <div className="flex-shrink-0">
                   <img 
                     src="/images/qweb.jfif" 
-                    alt="Queen's Web Development Club" 
+                    alt="Queen&apos;s Web Development Club" 
                     className="w-16 h-16 object-contain rounded-lg shadow-sm"
                   />
                 </div>
@@ -272,13 +272,13 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
                       <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Software Engineer</h3>
-                      <p className="text-slate-600 font-medium text-lg">Queen's Web Development Club</p>
+                      <p className="text-slate-600 font-medium text-lg">Queen&apos;s Web Development Club</p>
                 </div>
                     <span className="text-slate-500 font-medium">December 2024 - April 2025</span>
               </div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                    Collaborated on a 4-person team to build a full-stack scheduling app for Queen's Web Development Club. 
-                    Delivered a functional product that hybridized Calendly & LettuceMeet, streamlining the club's event 
+                    Collaborated on a 4-person team to build a full-stack scheduling app for Queen&apos;s Web Development Club. 
+                    Delivered a functional product that hybridized Calendly & LettuceMeet, streamlining the club&apos;s event 
                     planning process by a tight sprint deadline.
               </p>
               <div className="flex flex-wrap gap-2">
@@ -297,7 +297,7 @@ export default function Home() {
                 <div className="flex-shrink-0">
                   <img 
                     src="/images/qtedt.jfif" 
-                    alt="Queen's Themed Entertainment Development Team" 
+                    alt="Queen&apos;s Themed Entertainment Development Team" 
                     className="w-16 h-16 object-contain rounded-lg shadow-sm"
                   />
                 </div>
@@ -305,7 +305,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
                       <h3 className="font-header text-2xl font-semibold text-slate-900 mb-1">Project Engineer</h3>
-                      <p className="text-slate-600 font-medium text-lg">Queen's Themed Entertainment Development Team</p>
+                      <p className="text-slate-600 font-medium text-lg">Queen&apos;s Themed Entertainment Development Team</p>
                 </div>
                     <span className="text-slate-500 font-medium">September 2024 - Present</span>
               </div>
@@ -391,13 +391,13 @@ export default function Home() {
               <div className="h-48 bg-slate-300 relative overflow-hidden">
                  <img 
                    src="/images/room-booking.png" 
-                   alt="Queen's Computing Room Booking" 
+                   alt="Queen&apos;s Computing Room Booking" 
                    className="w-full h-full object-cover"
                  />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Queen's Computing Room Booking <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">Queen&apos;s Computing Room Booking <span className="text-slate-500 font-normal text-base">(2025)</span></h3>
                 <p className="text-slate-600 mb-4">Full-stack room booking system for Queen&apos;s Computing students. Built with Next.js, React, and Supabase with AWS SES integration for email notifications.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Next.js</span>
@@ -539,13 +539,13 @@ export default function Home() {
               <div className="h-48 bg-green-200 relative overflow-hidden">
                 <img 
                   src="/images/game.jfif" 
-                  alt="The World's Hardest Game" 
+                  alt="The World&apos;s Hardest Game" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
               </div>
               <div className="p-6">
-                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">The World's Hardest Game <span className="text-slate-500 font-normal text-base">(2023)</span></h3>
+                <h3 className="font-header text-xl font-semibold text-slate-900 mb-2">The World&apos;s Hardest Game <span className="text-slate-500 font-normal text-base">(2023)</span></h3>
                 <p className="text-slate-600 mb-4">Personalized recreation of the classic video game built with Python and Pygame. Features 11 challenging levels with identical graphics and gameplay mechanics to the original.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Python</span>
