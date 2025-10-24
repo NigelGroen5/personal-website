@@ -138,7 +138,7 @@ export default function Home() {
                 <a href="#projects" className="px-8 py-4 bg-slate-700 text-white rounded-xl font-semibold hover:bg-slate-800 hover:shadow-lg transition-all text-center">
                   View My Work
                 </a>
-                <a href="/nigel_groen_resume (2).pdf" download="Nigel_Groen_Resume.pdf" className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-slate-500 hover:text-slate-800 transition-all text-center">
+                <a href="/nigel_groen_resume_2025.pdf" download="Nigel_Groen_Resume.pdf" className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-slate-500 hover:text-slate-800 transition-all text-center">
                   Download Resume
                 </a>
               </div>
@@ -216,10 +216,10 @@ export default function Home() {
                     service agent, achieving 30% higher ticket resolution score.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">JavaScript</span>
-                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
-                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">API Development</span>
-                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Full-Stack</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">TypeScript</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">React</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Next.js</span>
+                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Convex</span>
                     <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Risk Management</span>
                   </div>
                 </div>
