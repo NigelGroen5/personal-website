@@ -414,7 +414,7 @@ export default function Home() {
               </div>
             </a>
 
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
+            <a href="https://calendar.qweb.dev/" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2 block">
               <div className="h-48 bg-gray-200 relative overflow-hidden">
                  <img 
                    src="/images/qweb-booking.png" 
@@ -433,9 +433,14 @@ export default function Home() {
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">JavaScript</span>
                   <span className="px-2 py-1 bg-slate-100 text-slate-700 rounded text-sm">Node.js</span>
                 </div>
-                <div className="text-slate-500 text-sm font-medium">Project Showcase</div>
+               <div className="text-slate-600 font-medium hover:text-slate-800 transition-colors flex items-center gap-2">
+                  View Live Project 
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
               </div>
-            </div>
+            </a>
 
             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-2">
               <div className="h-48 bg-slate-400 relative overflow-hidden">
