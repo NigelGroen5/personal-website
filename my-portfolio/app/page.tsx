@@ -138,8 +138,8 @@ export default function Home() {
                 <a href="#projects" className="px-8 py-4 bg-slate-700 text-white rounded-xl font-semibold hover:bg-slate-800 hover:shadow-lg transition-all text-center">
                   View My Work
                 </a>
-                <a href="/nigel_groen_resume_2025.pdf" download="Nigel_Groen_Resume.pdf" className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-slate-500 hover:text-slate-800 transition-all text-center">
-                  Download Resume
+                <a href="/Nigel_Groen_Resume_2025.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-slate-500 hover:text-slate-800 transition-all text-center">
+                  View Resume
                 </a>
               </div>
             </div>
@@ -566,11 +566,6 @@ export default function Home() {
           <p className="text-xl text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
             That&apos;s all, thanks for visiting.
           </p>
-          <div className="mt-16 pt-8 border-t border-slate-400">
-            <div className="flex flex-col items-center">
-              <p className="text-slate-200 mb-2">© 2025 Nigel Groen.</p>
-            </div>
-          </div>
         </div>
       </section>
     </div>
