@@ -145,12 +145,12 @@ export default function Home() {
             </div>
 
             {/* Right side - Headshot area */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
+            <div className="flex justify-center lg:justify-center">
+              <div className="relative transform lg:-translate-x-12">
                 {/* Headshot */}
-                <div className="w-80 h-80 rounded-3xl shadow-lg overflow-hidden">
+                <div className="w-80 h-80 md:w-96 md:h-96 lg:w-96 lg:h-96 rounded-3xl shadow-lg overflow-hidden">
                   <img 
-                    src="/images/IMG_6331.jpg" 
+                    src="/images/IMG_9615.jpg" 
                     alt="Nigel Groen Headshot" 
                     className="w-full h-full object-cover"
                   />
