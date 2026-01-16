@@ -138,7 +138,7 @@ export default function Home() {
                 <a href="#projects" className="px-8 py-4 bg-slate-700 text-white rounded-xl font-semibold hover:bg-slate-800 hover:shadow-lg transition-all text-center">
                   View My Work
                 </a>
-                <a href="/Nigel_Groen_Resume_2025.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-slate-500 hover:text-slate-800 transition-all text-center">
+                <a href="/Nigel_Groen_Resume_2026.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold hover:border-slate-500 hover:text-slate-800 transition-all text-center">
                   View Resume
                 </a>
               </div>
